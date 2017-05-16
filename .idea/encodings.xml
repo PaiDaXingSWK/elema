@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/sell/.eslintrc.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/build/dev-server.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/build/webpack.base.conf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/config/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/App.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/goods/goods.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/brand@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/brand@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/bulletin@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/bulletin@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/decrease_1@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/decrease_1@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/decrease_2@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/decrease_2@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/discount_1@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/discount_1@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/discount_2@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/discount_2@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/guarantee_1@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/guarantee_1@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/guarantee_2@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/guarantee_2@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/header.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/invoice_1@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/invoice_1@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/invoice_2@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/invoice_2@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/special_1@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/special_1@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/special_2@2x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/header/special_2@3x.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/seller/seller.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/components/tatings/ratings.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/src/router/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell/static/css/reset.css" charset="UTF-8" />
+  </component>
+</project>
