@@ -2,7 +2,6 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/sell/.eslintrc.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sell/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sell/build/dev-server.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sell/build/webpack.base.conf.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sell/config/index.js" charset="UTF-8" />
