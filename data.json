@@ -56,7 +56,7 @@
         {
           "name": "皮蛋瘦肉粥",
           "price": 10,
-          "oldPrice": "",
+          "oldPrice": 18,
           "description": "咸粥",
           "sellCount": 229,
           "rating": 100,
@@ -90,7 +90,7 @@
         {
           "name": "扁豆焖面",
           "price": 14,
-          "oldPrice": "",
+          "oldPrice": 20,
           "description": "",
           "sellCount": 188,
           "rating": 96,
@@ -158,7 +158,7 @@
         {
           "name": "牛肉馅饼",
           "price": 14,
-          "oldPrice": "",
+          "oldPrice": 18,
           "description": "",
           "sellCount": 114,
           "rating": 91,
