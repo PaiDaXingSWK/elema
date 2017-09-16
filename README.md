@@ -1,4 +1,4 @@
->  本项目是基于vue2最新实战项目，vue2 +vue-router2 + es6 +webpack 高仿饿了么app,是适合新手进阶的绝佳教程,因为我上班做的是web端应用，so，这也是我之前在某网站学习到一个大神的教程后的第一个练手app，
+>  本项目是基于vue2最新实战项目，vue2 +vue-router2 + es6 +webpack 高仿饿了么app,是适合新手进阶的绝佳教程,因为我上班做的是web端应用，so，这也是我之前在某网站学习到一个大神的教程后的第一个练手app，*特此声明，本项目所有图片素材，数据皆来自之前我学习的大神的资料，本项目绝无商业用途，只为练手与交流。
 
 
 ###首先
@@ -19,13 +19,16 @@
 
 预期完成效果上图
 ***
-* 加入购物车动画
+![770906538369325923.jpg](http://upload-images.jianshu.io/upload_images/5327602-247f49f000e954c3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![11.gif](http://upload-images.jianshu.io/upload_images/4249223-8d462b93150db24e.gif?imageMogr2/auto-orient/strip)
 
-* 弹出购物车 商品详情页
 
-![2222.gif](http://upload-images.jianshu.io/upload_images/4249223-71b66b4249d868bd.gif?imageMogr2/auto-orient/strip)
+![664758838702543093.jpg](http://upload-images.jianshu.io/upload_images/5327602-ab4d3a27bae68c5c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+
+
 
 
 ###安装
@@ -93,5 +96,5 @@ npm install friendly-errors-webpack-plugin --save-dev
 ***
 * 如果喜欢一定要 star哦  ，多谢多谢
 * 如果有意见和问题 请在 lssues提出，我会及时回复。
-*本项目所有图片素材，数据皆来自之前我学习的大神的资料，本项目绝无商业用途，只为练手与交流。
+*特此声明，本项目所有图片素材，数据皆来自之前我学习的大神的资料，本项目绝无商业用途，只为练手与交流。
 
