@@ -3,21 +3,32 @@
     <div class="content">
       <div class="content-left">
         <div class="logo-wrapper">
-          <div class="logo">
-            <span class="icon-shopping_cart"></span>
+          <div class="logo" :class="{'hightLight':totalCount>0}">
+            <!--<span class="icon-shopping_cart" :class="{'hightLight':totalCount>0}"></span>-->
+              <span  :class="cat"></span>
           </div>
-
+          <div class="num" v-show="totalCount>0">{{totalCount}}</div>
         </div>
-        <div class="price">00</div>
+         <div class="price" :class="{'highPrice':totalCount>0}">￥{{totalPrice }}</div>
         <div class="desc">另需配送费￥{{deliveryPrice}}元</div>
       </div>
-      <div class="content-right"></div>
+      <div class="content-right">
+        <div class="pay" :class="payClass">
+         {{payDesc}}
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script type="text/ecmascript-6">
   export default {
       props: {
+          selectFoods: {
+              type: Array,
+            default() {
+                    return [{price:20,count:2}]
+            }
+          },
         deliveryPrice: {
           type: Number,
           default: 0
@@ -26,10 +37,60 @@
           type: Number,
           default: 0
         }
+      },
+    computed: {
+          totalPrice() {
+              let total = 0
+            this.selectFoods.forEach( ( food )=> {
+                  total += food.price * food.count
+            })
+            return total
+          },
+      payDesc(){
+              if(this.totalPrice===0){
+                  return `还差￥${this.minPrice}元起送`
+
+              }else if(this.totalPrice < this.minPrice){
+                  let diff=this.minPrice-this.totalPrice
+                  return `还差￥${diff}元起送`
+              }else{
+                  return '去结算'
+              }
+      },
+      payClass(){
+          if(this.totalPrice < this.minPrice){
+                return ''
+          }else{
+              return 'highPay'
+          }
+      },
+      cat(){
+          if(this.totalPrice>0){
+              return 'highLight'
+          }else{
+              return 'icon-shopping_cart'
+          }
+      },
+      totalCount() {
+              let count = 0
+        this.selectFoods.forEach((food) => {
+                  count+= food.count
+        })
+        return count
       }
+    }
   }
 </script>
-<style>
+<style scoped>
+  .pay{
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 12px;
+    color:rgba(255,255,255,.4);
+    font-weight: 700;
+  background: #2b333b;
+  }
   .shopCart{
     width: 100%;
     height:48px ;
@@ -67,7 +128,7 @@
     background:#2b343c;
     text-align: center;
   }
-  .logo .icon-shopping_cart{
+   .icon-shopping_cart{
      display: inline-block;
     color:#80858a;
    width: 100%;
@@ -76,6 +137,14 @@
     background-size: cover;
 
   }
+   .highLight{
+     display: inline-block;
+     color:#80858a;
+     width: 100%;
+     height: 100%;
+     background-image : url("cat2.png") ;
+     background-size: cover;
+   }
   .price{
     display: inline-block;
     font-weight: 700;
@@ -101,5 +170,35 @@
   .content .content-right{
     flex: 0 0 105px;
     width: 105px;
+  }
+  .num {
+    position: absolute;
+    top:0;
+    right: 0px;
+    width: 24px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    background: rgb(240,20,20);
+
+  }
+     .highLight{
+    display: inline-block;
+    color:#80858a;
+    width: 100%;
+    height: 100%;
+    background-image : url("cat2.png") !important;
+    background-size: cover;
+  }
+ .content-left .highPrice{
+    color: #fff !important;
+  }
+  .highPay {
+    background: #00b43c;
+    color: #fff;
   }
 </style>

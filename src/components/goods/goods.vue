@@ -31,19 +31,23 @@
                     <span class="now">￥{{food.price}}</span><span class="old"
                                                                   v-show="food.oldPrice">￥{{food.oldPrice}}</span>
                   </div>
+                  <div class="cartcontrol-wrapper">
+                    <cartcontrol :food="food"></cartcontrol>
+                  </div>
                 </div>
               </li>
             </ul>
           </li>
         </ul>
       </div>
-      <shopcart  :delivery-price="seller.deliveryPrice"
+      <shopcart :select-foods="selectFoods"  :delivery-price="seller.deliveryPrice"
                  :min-price="seller.minPrice" ></shopcart>
     </div>
 </template>
 <script type="text/ecmascript-6">
   import BScroller from 'better-scroll'
   import shopcart from '../shopCart/shopCart'
+  import cartcontrol from '../catrtcontrol/cartcontrol'
   const ERR_OK = 0
     export default{
         props: {
@@ -68,6 +72,17 @@
             }
           }
           return 0
+        },
+        selectFoods() {
+            let foods= [];
+            this.goods.forEach((good)=> {
+                good.foods.forEach((food)=>{
+                    if(food.count){
+                        foods.push(food)
+                    }
+                })
+            })
+          return foods
         }
       },
       created() {
@@ -98,7 +113,8 @@
                     click: true
                 })
                 this.foodScroll = new BScroller(this.$refs.foodsWrapper, {
-                  probeType: 3
+                  probeType: 3,
+                  click: true
                 })
               this.foodScroll.on('scroll', (pos) => {
                 this.scrolly = Math.abs(Math.round(pos.y))
@@ -116,7 +132,8 @@
         }
       },
       components: {
-            shopcart
+            shopcart,cartcontrol
+
       }
     }
 
@@ -137,6 +154,12 @@
     -webkit-transform: scaleY(0.5);
     -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
+  }
+  .cartcontrol-wrapper{
+    position: absolute;
+    right: 0px;
+    bottom: 12px;
+
   }
   .goods{
     display: flex;
