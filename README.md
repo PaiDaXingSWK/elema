@@ -17,7 +17,7 @@
 *  vue-router
 *  webpack
 
-预期完成效果上图
+完成效果上图
 ***
 ![770906538369325923.jpg](http://upload-images.jianshu.io/upload_images/5327602-247f49f000e954c3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
