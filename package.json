@@ -11,10 +11,11 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "better-scroll": "^0.1.8",
+    "iview": "^2.0.0-rc.14",
     "vue": "^2.2.6",
-    "vue-router": "^2.3.1",
-    "vue-resource":"^1.0.1",
-    "better-scroll": "^0.1.8"
+    "vue-resource": "^1.0.1",
+    "vue-router": "^2.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

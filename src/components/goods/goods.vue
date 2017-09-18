@@ -178,7 +178,7 @@
   }
   .menu-item{
     display: table;
-    width: 56px;
+    /*width: 56px;*/
     height: 54px;
     line-height: 14px !important;
     padding: 0 12px;
